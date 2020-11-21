@@ -17,6 +17,7 @@ import java.util.List;
  */
 public class Test {
     public static void main(String[] args) {
+        //注释
         ApplicationContext app=new ClassPathXmlApplicationContext("applicationContext.xml");
         MongoDao dao=(MongoDao) app.getBean("MongoDao");
         List<Book> list= dao.select();
